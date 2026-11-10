@@ -4,6 +4,7 @@
   "name": "Ryde nearby",
   "version": "2.3.0",
   "author": "Fredrik",
+  "homepage": "https://github.com/FredrikMWold/omarchy-ryde-nearby",
   "description": "Shows available Ryde scooters in a native map panel",
   "kinds": [
     "bar-widget"

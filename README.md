@@ -3,6 +3,18 @@
 An Omarchy bar widget that opens a native QML panel of available Ryde scooters
 near the device's current location.
 
+## Install
+
+```sh
+omarchy plugin add https://github.com/FredrikMWold/omarchy-ryde-nearby.git --enable
+```
+
+The repository root contains `manifest.json` and is installed at
+`~/.config/omarchy/plugins/fredrik.ryde-nearby`. Update with
+`omarchy plugin update fredrik.ryde-nearby`.
+
+## Setup and use
+
 The install roots are `geoclue`, `libnotify`, `python-gobject`, and
 `qt6-location`. Python and Qt Positioning are pulled transitively. The plugin
 checks functional requirements before loading the map and presents an
@@ -83,5 +95,4 @@ data. If automatic positioning fails, the previous position and scooters
 are cleared so they cannot be mistaken for your current location.
 
 Run the location/search regression tests with
-`python -B -m unittest discover -s fredrik.ryde-nearby -p 'test_*.py'`
-from the repository root.
+`python -B -m unittest discover -p 'test_*.py'` from this repository's root.
